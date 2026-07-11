@@ -1,0 +1,177 @@
+/* ==========================
+   RESET
+========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+
+    font-family:Segoe UI,Tahoma,Geneva,Verdana,sans-serif;
+    background:linear-gradient(135deg,#1d4ed8,#4f46e5);
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:20px;
+
+}
+
+/* ==========================
+   CARD
+========================== */
+
+.container{
+
+    background:#fff;
+    max-width:700px;
+    width:100%;
+    padding:50px;
+    border-radius:20px;
+    text-align:center;
+    box-shadow:0 20px 45px rgba(0,0,0,.20);
+
+}
+
+.error-code{
+
+    font-size:110px;
+    font-weight:900;
+    color:#ef4444;
+    margin-bottom:10px;
+
+}
+
+h1{
+
+    color:#222;
+    margin-bottom:18px;
+
+}
+
+p{
+
+    color:#666;
+    line-height:1.8;
+    margin-bottom:30px;
+
+}
+
+/* ==========================
+   INFO BOX
+========================== */
+
+.info-box{
+
+    background:#f5f9ff;
+    border-left:5px solid #2563eb;
+    border-radius:10px;
+    text-align:left;
+    padding:22px;
+    margin-bottom:35px;
+
+}
+
+.info-box h3{
+
+    color:#2563eb;
+    margin-bottom:15px;
+
+}
+
+.info-box ul{
+
+    padding-left:20px;
+
+}
+
+.info-box li{
+
+    margin:12px 0;
+    color:#555;
+
+}
+
+/* ==========================
+   BUTTONS
+========================== */
+
+.buttons{
+
+    display:flex;
+    justify-content:center;
+    gap:15px;
+    flex-wrap:wrap;
+
+}
+
+.buttons a{
+
+    text-decoration:none;
+    color:#fff;
+    padding:14px 26px;
+    border-radius:10px;
+    font-weight:bold;
+    transition:.3s;
+
+}
+
+.home-btn{
+
+    background:#2563eb;
+
+}
+
+.register-btn{
+
+    background:#16a34a;
+
+}
+
+.contact-btn{
+
+    background:#f59e0b;
+
+}
+
+.buttons a:hover{
+
+    transform:translateY(-3px);
+    opacity:.9;
+
+}
+
+/* ==========================
+   MOBILE
+========================== */
+
+@media(max-width:650px){
+
+.container{
+
+    padding:30px 20px;
+
+}
+
+.error-code{
+
+    font-size:80px;
+
+}
+
+.buttons{
+
+    flex-direction:column;
+
+}
+
+.buttons a{
+
+    width:100%;
+
+}
+
+}

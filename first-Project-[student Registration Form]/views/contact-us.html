@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Support Center</title>
+
+    <link rel="stylesheet" href="/contact-us.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div class="container">
+
+    <div class="header-box">
+
+        <h1>Student Support Center</h1>
+
+        <p class="message">
+            Need help? We're here for you.
+            Browse the frequently asked questions below or submit your issue directly.
+            Our support team usually responds within 24 hours.
+        </p>
+
+    </div>
+
+    <div class="features">
+
+        <div class="feature-card">
+            <h3>⚡ Fast Response</h3>
+            <p>Most student queries are answered within one business day.</p>
+        </div>
+
+        <div class="feature-card">
+            <h3>🔒 Secure Support</h3>
+            <p>Your personal information remains safe and confidential.</p>
+        </div>
+
+        <div class="feature-card">
+            <h3>🎓 Student Assistance</h3>
+            <p>Help with login, registration, academic and technical issues.</p>
+        </div>
+
+    </div>
+
+    <div class="faq-box">
+
+        <h2>Frequently Asked Questions</h2>
+
+        <div class="faq">
+            <h4>📚 Registration Problem</h4>
+            <p>Check whether all required fields are filled correctly. If the issue continues, submit your problem below.</p>
+        </div>
+
+        <div class="faq">
+            <h4>🔑 Forgot Password</h4>
+            <p>Click the "Forgot Password" option available on the login page.</p>
+        </div>
+
+        <div class="faq">
+            <h4>📧 Didn't Receive Email?</h4>
+            <p>Please check your Spam folder before contacting support.</p>
+        </div>
+
+        <div class="faq">
+            <h4>💻 Login Issue</h4>
+            <p>Verify your email and password. If you're still unable to login, report the issue below.</p>
+        </div>
+
+    </div>
+
+    <div class="feedback-box">
+
+        <h2>Submit Your Problem</h2>
+
+        <p>Our support team will review your issue and contact you as soon as possible.</p>
+
+        <form action="/problem-submit" method="POST">
+
+            <input
+                type="text"
+                name="studentName"
+                placeholder="Full Name"
+                required
+            >
+
+            <input
+                type="email"
+                name="email"
+                placeholder="Email Address"
+                required
+            >
+
+            <textarea
+                name="problem"
+                rows="6"
+                placeholder="Describe your problem..."
+                required
+            ></textarea>
+
+            <button type="submit">Submit Problem</button>
+
+        </form>
+
+    </div>
+
+    <div class="support-box">
+
+        <h2>Contact Support</h2>
+
+        <p><strong>Email:</strong> support@firstproject.com</p>
+
+        <p><strong>Phone:</strong> +91 00000 00000</p>
+
+        <p><strong>Working Hours:</strong> Monday - Saturday | 9:00 AM - 6:00 PM</p>
+
+    </div>
+
+    <a href="/" class="home-btn">← Back to Home</a>
+
+</div>
+
+</body>
+</html>
