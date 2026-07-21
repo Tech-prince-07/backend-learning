@@ -1,3 +1,6 @@
+const Home = require('../models/details')
+const Query = require('../models/query')
+
 const path = require('path')
 const rootDir = require('../utils/path.js')
 

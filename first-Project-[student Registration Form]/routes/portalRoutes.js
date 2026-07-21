@@ -5,23 +5,23 @@ const getRequestController = require('../controllers/getRequests')
 const postRequestController = require('../controllers/postRequests')
 
 // home page
-portalRoutes.get('/', getRequestController.homeRouter)
+const homePage = portalRoutes.get('/', getRequestController.homeRouter)
 
 // login portal
-portalRoutes.get('/login', getRequestController.loginGetRouter)
-portalRoutes.post('/login',postRequestController.loginPostRouter)
+const loginGet = portalRoutes.get('/login', getRequestController.loginGetRouter)
+const loginPost = portalRoutes.post('/login',postRequestController.loginPostRouter)
 
 // registration portal
-portalRoutes.get('/register-portal',getRequestController.registerRouter)
+const registration = portalRoutes.get('/register-portal',getRequestController.registerRouter)
 
 //contact us 
-portalRoutes.get('/problem-submit', getRequestController.contactRouter)
+const contact = portalRoutes.get('/problem-submit', getRequestController.contactRouter)
 
 // submit details
-portalRoutes.post('/submit-details',postRequestController.submitRouter)
+const submit = portalRoutes.post('/submit-details',postRequestController.submitRouter)
 
 // thank page
-portalRoutes.post('/problem-submit',postRequestController.thankContactRouter )
+const thank = portalRoutes.post('/problem-submit',postRequestController.thankContactRouter )
 
 exports.portalRoutes = portalRoutes;
 
