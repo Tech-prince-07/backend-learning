@@ -3,26 +3,23 @@ const path = require('path')
 
 // external module
 const express = require('express')
-
 const app = express()
 
 // path of root directory
 const rootDir = path.dirname(require.main.filename)
 
-// data encoding
-app.use(express.urlencoded());
-
-
 // adding all css folder because we link all css file with their on respective html file
 app.use(express.static(path.join(rootDir, 'public')))
 
 // all routes
-const PortalRoutes = require('./routes/portalRoutes.js').allPortalRoutes
+const {portalRoutes} = require('./routes/portalRoutes.js')
 
-// calling routes
-app.use(PortalRoutes)
+// data encoding
+app.use(express.urlencoded());
 
-// when anoynomous request is coming
+// calling all routes
+app.use(portalRoutes)
+// when anonymous request is coming
 app.use((req, res, next) => {
     res.sendFile(path.join(rootDir, 'views', '404.html'))
 })
